@@ -1820,11 +1820,11 @@
 
         game_layer {
             bindings = <
-&mTapDance  &kp NUMBER_1  &kp N2  &kp N3    &kp N4     &kp N5                                                                       &kp N6        &kp N7                 &kp N8                             &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB     &kp Q         &kp W   &kp E     &kp R      &kp T                                                                        &kp Y         &kp U                  &kp I                              &kp O    &kp P     &kp MINUS
-&kp LCTRL   &kp A         &kp S   &kp D     &kp F      &kp G                                                                        &kp H         &kp J                  &kp K                              &kp L    &kp SEMI  &kp ENTER
-&mkp LCLK   &kp Z         &kp X   &kp C     &kp V      &kp B         &custom_hold_tap LS(LG(Q)) LEFT_WIN    &kp LG(LC(LEFT_ARROW))  &kp N         &kp M                  &kp COMMA                          &kp DOT  &kp FSLH  &kp ENTER
-                                  &mavuika  &kp SPACE  &kp LEFT_ALT  &to_mo 9 0                             &kp LG(LS(Q))           &kp LEFT_WIN  &mo_with_tapdance 1 0  &custom_hold_tap LEFT_SHIFT SPACE
+&mTapDance  &kp NUMBER_1  &kp N2  &kp N3    &kp N4     &kp N5                                                  &kp N6        &kp N7                 &kp N8                             &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB     &kp Q         &kp W   &kp E     &kp R      &kp T                                                   &kp Y         &kp U                  &kp I                              &kp O    &kp P     &kp MINUS
+&kp LCTRL   &kp A         &kp S   &kp D     &kp F      &kp G                                                   &kp H         &kp J                  &kp K                              &kp L    &kp SEMI  &kp ENTER
+&mkp LCLK   &kp Z         &kp X   &kp C     &kp V      &kp B           &mo 6           &kp LG(LC(LEFT_ARROW))  &kp N         &kp M                  &kp COMMA                          &kp DOT  &kp FSLH  &kp ENTER
+                                  &mavuika  &kp SPACE  &kp LEFT_SHIFT  &kp LEFT_ALT    &kp LG(LS(Q))           &kp LEFT_WIN  &mo_with_tapdance 1 0  &custom_hold_tap LEFT_SHIFT SPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -1844,10 +1844,10 @@
 
         connection_layer {
             bindings = <
-&kp GRAVE   &to 1         &to 2         &to 3         &to 4         &to 5                                                                                   &kp F6                          &kp F7  &kp F8     &kp F9  &kp F10  &kp F11
+&to 0       &to 1         &to 2         &to 3         &to 4         &to 5                                                                                   &kp F6                          &kp F7  &kp F8     &kp F9  &kp F10  &kp F11
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                                                            &trans                          &trans  &trans     &trans  &trans   &kp F12
-&trans      &trans        &trans        &trans        &trans        &kp LG(LS(Q))                                                                           &trans                          &trans  &trans     &trans  &trans   &trans
-&trans      &kp LEFT_WIN  &trans        &trans        &trans        &studio_unlock               &trans                       &trans                        &studio_unlock                  &trans  &trans     &trans  &trans   &trans
+&to 6       &to 7         &to 8         &to 9         &to 10        &to 11                                                                                  &trans                          &trans  &trans     &trans  &trans   &trans
+&to 12      &to 13        &to 14        &to 15        &trans        &studio_unlock               &trans                       &trans                        &studio_unlock                  &trans  &trans     &trans  &trans   &trans
                                         &soft_off     &kp LSHFT     &tapKp_holdSysReset 0 SPACE  &tapTo_holdBootloader 0 0    &tapKp_Bootloader 0 LEFT_ALT  &tapKp_holdSysReset 0 LEFT_WIN  &trans  &soft_off
             >;
         };

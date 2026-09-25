@@ -120,6 +120,13 @@
             timeout-ms = <350>;
             layers = <0>;
         };
+
+        ctrl_delete {
+            bindings = <&kp DELETE>;
+            key-positions = <0 24>;
+            timeout-ms = <350>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -1793,7 +1800,7 @@
 &kp PERCENT  &kp LS(PAGE_UP)  &kp LS(PAGE_DOWN)  &kp AMPERSAND           &kp PRINTSCREEN  &to 4                                          &kp LS(NUMBER_6)  &kp LS(N7)            &kp LS(N8)       &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp BACKSPACE
 &kp DOLLAR   &kp NUMBER_1     &kp NUMBER_2       &kp NUMBER_3            &kp NUMBER_3     &trans                                         &trans            &kp LC(LS(UP_ARROW))  &kp LEFT_BRACE   &kp GRAVE          &kp PIPE           &kp PLUS
 &to 0        &kp NUMBER_4     &kp NUMBER_5       &kp NUMBER_6            &kp NUMBER_6     &mkp MB3                                       &kp TILDE         &kp LC(LS(DOWN))      &kp RIGHT_BRACE  &kp DOUBLE_QUOTES  &kp SQT            &short_layer_tap 3 ENTER
-&kp CARET    &kp N7           &kp N8             &kp N9                  &kp N9           &kp SLASH              &to 4    &trans         &kp SQT           &kp SQT               &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp PIPE           &trans
+&mkp RCLK    &kp N7           &kp N8             &kp N9                  &kp N9           &kp SLASH              &to 4    &trans         &kp SQT           &kp SQT               &kp LEFT_BRACE   &kp RIGHT_BRACE    &kp PIPE           &trans
                                                  &momentary_tap 7 SPACE  &kp N0           &tapKp_holdTo 0 SPACE  &to 0    &kp LC(SLASH)  &kp END           &kp LSHFT             &kp BACKSPACE
             >;
         };

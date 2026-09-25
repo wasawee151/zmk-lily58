@@ -1854,11 +1854,11 @@
 
         mouse_layerr {
             bindings = <
-&kp BACKSPACE  &kp RC(Z)       &kp LC(Y)        &pw_pc_kantor    &pass_windows_kantor               &gap_port                              &kp N5  &trans  &trans  &trans          &none            &none
-&kp RC(ENTER)  &kp LC(LS(Z))   &mmv MOVE_UP     &mkp RCLK        &msc SCRL_UP                       &username_pc_kantor                    &kp T   &trans  &trans  &none           &msc SCRL_UP     &mkp RCLK
-&caps_word     &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &none                              &kp H                                  &kp G   &trans  &trans  &none           &msc SCRL_DOWN   &mkp LCLK
-&kp LC(SLASH)  &msc SCRL_LEFT  &msc SCRL_RIGHT  &mkp LCLK        &msc SCRL_DOWN                     &none                &trans    &trans  &kp B   &trans  &trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans
-                                                &to 0            &custom_hold_tap LEFT_SHIFT SPACE  &kp SPACE            &to 0     &trans  &trans  &trans  &trans
+&kp BACKSPACE  &kp RC(Z)       &kp LC(Y)        &pw_pc_kantor    &pass_windows_kantor               &gap_port                                        &kp N5          &trans  &trans  &trans          &none            &none
+&kp RC(ENTER)  &kp LC(LS(Z))   &mmv MOVE_UP     &mkp RCLK        &msc SCRL_UP                       &username_pc_kantor                              &msc SCRL_UP    &trans  &trans  &none           &msc SCRL_UP     &mkp RCLK
+&caps_word     &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &none                              &kp H                                            &mkp RCLK       &trans  &trans  &none           &msc SCRL_DOWN   &mkp LCLK
+&kp LC(SLASH)  &msc SCRL_LEFT  &msc SCRL_RIGHT  &mkp LCLK        &msc SCRL_DOWN                     &none                &trans    &mkp LCLK         &msc SCRL_DOWN  &trans  &trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans
+                                                &to 0            &custom_hold_tap LEFT_SHIFT SPACE  &kp SPACE            &to 0     &sticky_layer 14  &trans          &trans  &trans
             >;
         };
 
@@ -1970,6 +1970,16 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        sticky_ctrl {
+            bindings = <
+&kp DELETE  &trans     &trans     &trans     &trans          &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans     &trans     &trans     &kp LC(R)       &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp LC(A)  &kp LC(S)  &trans     &kp LC(F)       &trans                       &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)       &kp LC(B)  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans     &kp LEFT_SHIFT  &trans     &to 0     &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
